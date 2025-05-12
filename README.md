@@ -23,14 +23,14 @@ module "vpc" {
   subnet_config = {
     public_subnet = {
       cidr_block = "10.0.0.0/24"
-      az         = "us-north-1a"
+      az         = "us-east-1a"
       #To set the subnet as public, default is private
       public     = true
     }
 
     private_subnet = {
       cidr_block = "10.0.1.0/24"
-      az         = "us-north-1b"
+      az         = "us-east-1b"
     }
   }
 }
